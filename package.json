@@ -1,0 +1,10 @@
+{
+    "CloudScraper": {
+        "name": "云盘媒体刮削",
+        "description": "监控云盘目录文件变化，自动转移+刮削（支持 rclone move 到云盘其他目录）。",
+        "version": "1.0",
+        "icon": "cloud.png",
+        "author": "Mr.SunSea",
+        "level": 1
+    }
+}
