@@ -398,8 +398,8 @@ class CloudScraper(_PluginBase):
                 # 转移
 
                 if transfer_type == "rclone_copy" or transfer_type == "rclone_move":
-                    if file_path.startswith("MP/"):
-                        file_path = file_path.replace("MP/", "MP:/")
+                    if file_path.startswith("/MP/"):
+                        file_path = file_path.replace("/MP/", "MP:/")
 
                 transferinfo: TransferInfo = self.filetransfer.transfer_media(in_path=file_path,
                                                                               in_meta=file_meta,
