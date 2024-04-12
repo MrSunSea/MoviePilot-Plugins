@@ -400,6 +400,7 @@ class CloudScraper(_PluginBase):
                 if transfer_type == "rclone_copy" or transfer_type == "rclone_move":
                     if file_path.startswith("/MP/"):
                         file_path = file_path.replace("/MP/", "MP:/")
+                        logger.info(f"源路径识别为云盘目录：{file_path}")
 
                 transferinfo: TransferInfo = self.filetransfer.transfer_media(in_path=file_path,
                                                                               in_meta=file_meta,
